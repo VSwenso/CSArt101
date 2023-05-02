@@ -4,6 +4,7 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: dotted 6px #e361b3;
+    background-color: #759cdb;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
