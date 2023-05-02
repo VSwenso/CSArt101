@@ -22,16 +22,4 @@ myMainRide = {
 document.writeln("Kinds of transportation I use:", myTransport, "</br>");
 // This little trick allows us to write an object into the document
 document.writeln("My Main Ride: <pre>"
-    JSON.stringify(myMainRide, null, '\t'), "</pre"); 
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+    JSON.stringify(myMainRide, null, '\t'), "</pre>"); 
