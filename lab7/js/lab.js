@@ -5,7 +5,7 @@
 // sortUserName - a funstion that takes user input and sorts the letters
 // of their name 
 function sortUserName() {
-    var userName = widow.prompt("Hi. Please tell me your name do I can fix it.");
+    var userName = widow.prompt("Hi. Please tell me your name do I can fix it.", "");
     console.log("userName =", userName);
     // split string to array
     var nameArray = userName.split('');
