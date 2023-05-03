@@ -5,7 +5,7 @@
 // sortUserName - a funstion that takes user input and sorts the letters
 // of their name 
 function sortUserName() {
-    var userName = window.prompt("Hi. Please tell me your name do I can fix it."0o);
+    var userName = window.prompt("Hi. Please tell me your name so I can fix it.");
     console.log("userName =", userName);
     // split string to array
     var nameArray = userName.split('');
@@ -19,11 +19,12 @@ function sortUserName() {
     //Note that I could have done the above lines as a single line 
     //  userName.toLower().split("".sort().join("")
     return nameSorted; 
-}
-
 //output
 document.writeln("Oh hey, I've fixed your name: ",
     sortUserName(), "</br");
+
+}
+
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
 function myFunction(param1, param2) {
