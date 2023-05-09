@@ -13,7 +13,7 @@ function squareRoot(x) {
 
 //Step 3: test the function 
 console.log(squareRoot(16)); //output: 4 
-console.log(squareRoot(144)); //output: 12
+console.log(squareRoot(25)); //output: 5
 
 //Step 4: Use map with your function as a callback 
 var squareRootResults = numbers.map(squareRoot);
@@ -24,4 +24,12 @@ var cubeResults = numbers.map(funtion(x) {
   var result = Math.pow(x, 3); 
   return result;
 });
-console.log(cubeResults);
+console.log(cubeResults); //output: [1000000, 531441, 1, 4096, 74088, 2985984, 1000000000000]
+
+//Step 6: display teh cubeResults array in an HTML document
+document.write("<p> Cube results:</p>"); 
+document.write("<ul>"); 
+for (var 1 = 0; i = cubeResults.length; i++) {
+  document.write("<li>" + cubeResults[i] + "</li>");
+}
+document.write("</ul>"); 
