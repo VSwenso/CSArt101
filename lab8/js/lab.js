@@ -2,23 +2,26 @@
 // Author: Tory Swenson
 // Date: 5/7/23
 
-function isEven(x){
-  return (x % 2 == 0);
+// Step 1: create an array of numbers 
+var numbers = [2, 4, 6, 8, 10]; 
+
+// Step 2: create a named function
+function square(x) {
+  var result = x * x; 
+  return result;
 }
 
-//test function
-console.log("is 1 even? ", isEven(1));
-console.log("is 2 even? ", isEven(2)); 
+//Step 3: test the function 
+console.log(square(2)); //output: 4 
+console.log(square(5)); //output: 25
+console.log(square(8)); //output: 64
 
-array = [100, 81, 4, 16, 42, 144, 10000]
-console.log("My array", array); 
+//Step 4: Use map with your function as a callback 
+var squaredNumbers = numbers.map(square);
+console.log(squaredNumbers); //output: [4, 16, 36, 64, 100]
 
-var result = array.map(isEven); 
-//should return (true, false, true, true, true, true, true)
-console.log("Test of evenness of array:", result); 
-
-var result = array.map(function(x){
-  return x ** 0,5; 
-})
-//should return [10, 9, 2, 4, 6.480, 12, 100]
-console.log("Squareroot of array:", result); 
+//Step 5: use an anonymous function as a callback 
+var cubedNumbers = numbers.map(function(x){
+  return x * x * x
+});
+console.log(cubeResults); //output: [1000000, 531441, 1, 4096, 74088, 2985984, 1000000000000]
