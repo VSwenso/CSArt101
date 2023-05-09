@@ -3,7 +3,7 @@
 // Date: 5/7/23
 
 // Step 1: create an array of numbers 
-var numbers = [2, 4, 6, 8, 10]; 
+var numbers = [1, 4, 9, 16, 25]; 
 
 // Step 2: create a named function
 function square(x) {
@@ -12,16 +12,16 @@ function square(x) {
 }
 
 //Step 3: test the function 
-console.log(square(2)); //output: 4 
 console.log(square(5)); //output: 25
-console.log(square(8)); //output: 64
+console.log(square(10)); //output: 100
 
 //Step 4: Use map with your function as a callback 
-var squaredNumbers = numbers.map(square);
-console.log(squaredNumbers); //output: [4, 16, 36, 64, 100]
+var squareResults = numbers.map(square);
+console.log(squareNumbers); //output: [1, 16, 81, 256, 625]
 
 //Step 5: use an anonymous function as a callback 
-var cubedNumbers = numbers.map(function(x){
-  return x * x * x
+var cubeResults = numbers.map(function(x) {
+  var result = x * x * x; 
+  return result; 
 });
-console.log(cubeResults); //output: [1000000, 531441, 1, 4096, 74088, 2985984, 1000000000000]
+console.log(cubeResults); //output: [1, 64, 729, 4096, 15625]
