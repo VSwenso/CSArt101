@@ -2,26 +2,33 @@
 // Author: Tory Swenson
 // Date: 5/7/23
 
-// Step 1: create an array of numbers 
-var numbers = [1, 4, 9, 16, 25]; 
+// Constants 
 
-// Step 2: create a named function
-function square(x) {
-  var result = x * x; 
-  return result;
+//Functions
+
+//this is an example of a functiom 
+function myFunction(param1, param2) {
+  //some code here
+  //return results;
 }
 
-//Step 3: test the function 
-console.log(square(5)); //output: 25
-console.log(square(10)); //output: 100
+function main() {
+  console.log("Main function started."); 
+  var someArray = [100, 10, 200, 300]; //an array
+  console.log(someArray); //printing the array
 
-//Step 4: Use map with your function as a callback 
-var squareResults = numbers.map(square);
-console.log(squareNumbers); //output: [1, 16, 81, 256, 625]
+  function addOne(x){//anonymous function
+    var results = x+1
+    return results; 
+}
+  console.log(someArray.map(addOne)); //printed results
+                                      //function action 
 
-//Step 5: use an anonymous function as a callback 
-var cubeResults = numbers.map(function(x) {
-  var result = x * x * x; 
-  return result; 
-});
-console.log(cubeResults); //output: [1, 64, 729, 4096, 15625]
+  console.log(someArray.map(function(x){ //printed results 
+  return x*2;                            //on an array
+}))
+
+}
+
+
+main();
