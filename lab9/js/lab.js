@@ -13,34 +13,33 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-    var outputE1 = document.getElementById("minor-section");
-    var newE1 = document.createElement("p")
-    newE1.style.color = "purple";
-    newE1.innerText = "FOR REAL!?";
-    
-    var newE2 = document.createElement("p");
-    newE2.innerText = "PERSONA 5";
-    
-    outputE1.appendChild(newE1);
-    outputE1.appendChild(newE2);
+  console.log("Main function started,"); 
+  // the code that makes everything happen 
+  var outputEl = document.getElementById("output"); 
+  console.log("outputEl: ", outputEl);
 
-    /*targetEl.appendChild(newEl);
-    var buttonElement = document.createElement("button"); 
-    buttonElement.id = "button"
-    buttonElement.innerHTML = "I have brought peace, freedom, justice, and security to my new empire!"; 
-    document.body.appendChild(buttonElement); 
+  var new1El = document.createElement("p");
 
-    var newEl = document.createElement("div"); 
-    targetEl2.appendChild(newEl2); 
-    var resultsElement = document.createElement("Results"); 
-    resultsElement.id = "Results"
-    resultsElement.innerHTML = "For real!?"; */
+  new1El.innerHTML = "something new."; 
+  new1El.id = "new-one"; 
 
-    document.getElementById("box").style.marginLeft = "40px";
- 
+  var new2El = document.createElement("p"); 
+  new1El.id = "new-two"; 
+
+  new2El.innerHTML = "something else."; 
+
+  outputEl.appendChild(new1El); 
+  outputE1.appendChild(new2El); 
+
+    document.getElementById("box"). 
+        style.marginLeft = "40px"; 
     
     var bioEl = document.getElementById("bio"); 
     bioEl.style.color = "red"; 
+
+  new1El.style.color = "blue"; 
+  outputEl.style.border = "dashed 1px red"; 
+  
 
 }
 
