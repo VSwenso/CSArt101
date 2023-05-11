@@ -13,31 +13,24 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-//Step 1
-  const outputEl = document.getElementById("output"); 
+    var newEl = document.createElement("div"); 
+    targetEl.appendChild(newEl);
+    var buttonElement = document.createElement("button"); 
+    buttonElement.id = "button"
+    buttonElement.innerHTML = "I have brought peace, freedom, justice, and security to my new empire!"; 
+    document.body.appendChild(buttonElement); 
 
-//Step 2
-  const new1El = document.createElement("p"); 
+    var newEl = document.createElement("div"); 
+    targetEl2.appendChild(newEl2); 
+    var resultsElement = document.createElement("Results"); 
+    resultsElement.id = "Results"
+    resultsElement.innerHTML = "For real!?"; 
 
-//Step 3
-  new1El.innerHTML = "This is the new content of new1El"; 
-
-//Step 4
-  const new2El = document.createElement("p"); 
-
-//Step 5
-  new2El.innerHTML = "this is the new content of new2El"; 
-
-//Step 6 
-  outputEl.appendChild(new1El); 
-  outputEl.appendChild(new2El); 
-
-//Step 7
-//Change the background color of outputEl
-  outputEl.style.backgroundColor = "lightblue"; 
-
-//change the font color of new1El
-  new1El.style.color = "red"; 
+    document.getElementById("box"). 
+        style.marginLeft = "40px"; 
+    
+    var bioEl = document.getElementById("bio"); 
+    bioEl.style.color = "red"; 
 
 }
 
