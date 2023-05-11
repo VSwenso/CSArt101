@@ -14,7 +14,7 @@ function myFunction(param1, param2) {
 
 function main() {
     var outputE1 = document.getElementById("div");
-    var newEl = document.createElement("p")
+    var newE1 = document.createElement("p")
     newE1.style.color("purple");
     newE1.innerText("FOR REAL!?");
     
