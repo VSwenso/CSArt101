@@ -29,17 +29,13 @@ function main() {
   new2El.innerHTML = "something else."; 
 
   outputEl.appendChild(new1El); 
-  outputE1.appendChild(new2El); 
+  outputEl.appendChild(new2El); 
 
     document.getElementById("box"). 
         style.marginLeft = "40px"; 
     
     var bioEl = document.getElementById("bio"); 
     bioEl.style.color = "red"; 
-
-  new1El.style.color = "blue"; 
-  outputEl.style.border = "dashed 1px red"; 
-  
 
 }
 
