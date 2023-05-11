@@ -13,7 +13,7 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-    var outputE1 = document.getElementById("div");
+    var outputE1 = document.getElementById("minor-section");
     var newE1 = document.createElement("p")
     newE1.style.color = "purple";
     newE1.innerText = "FOR REAL!?";
