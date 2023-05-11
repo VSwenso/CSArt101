@@ -15,11 +15,11 @@ function myFunction(param1, param2) {
 function main() {
     var outputE1 = document.getElementById("div");
     var newE1 = document.createElement("p")
-    newE1.style.color("purple");
-    newE1.innerText("FOR REAL!?");
+    newE1.style.color = "purple";
+    newE1.innerText = "FOR REAL!?";
     
     var newE2 = document.createElement("p");
-    newE2.innerText("PERSONA 5");
+    newE2.innerText = "PERSONA 5";
     
     outputE1.appendChild(newE1);
     outputE1.appendChild(newE2);
