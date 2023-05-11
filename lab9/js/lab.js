@@ -13,8 +13,18 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-    var newEl = document.createElement("div"); 
-    targetEl.appendChild(newEl);
+    var outputE1 = document.getElementById("div");
+    var newEl = document.createElement("p")
+    newE1.style.color("purple");
+    newE1.innerText("FOR REAL!?");
+    
+    var newE2 = document.createElement("p");
+    newE2.innerText("PERSONA 5");
+    
+    outputE1.appendChild(newE1);
+    outputE1.appendChild(newE2);
+
+    /*targetEl.appendChild(newEl);
     var buttonElement = document.createElement("button"); 
     buttonElement.id = "button"
     buttonElement.innerHTML = "I have brought peace, freedom, justice, and security to my new empire!"; 
@@ -24,7 +34,7 @@ function main() {
     targetEl2.appendChild(newEl2); 
     var resultsElement = document.createElement("Results"); 
     resultsElement.id = "Results"
-    resultsElement.innerHTML = "For real!?"; 
+    resultsElement.innerHTML = "For real!?"; */
 
     document.getElementById("box"). 
         style.marginLeft = "40px"; 
