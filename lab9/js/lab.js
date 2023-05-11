@@ -36,8 +36,8 @@ function main() {
     resultsElement.id = "Results"
     resultsElement.innerHTML = "For real!?"; */
 
-    document.getElementById("box"). 
-        style.marginLeft = "40px"; 
+    document.getElementById("box").style.marginLeft = "40px";
+ 
     
     var bioEl = document.getElementById("bio"); 
     bioEl.style.color = "red"; 
