@@ -13,46 +13,29 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-  function nameSort(str) {
-      return str.split('').sport().join('');
-  } 
+  console.log("Main function started."); 
+  //the code that makes stuff happn
+  var outputEl = document.getElementById('output'); 
+  var field = document.createElement('input'); 
+  var buttonEl = document.createElement('button'); 
+  var Name = document.createElement('div');
 
-  function anagram(str1, str2) {
-      if (str1.length !== str2.length) {
-          return false;
-      }
-      var sortedStr1 = str1.split('').sort().join(''); 
-      var sortedStr2 = str2.split('').sort().join(''); 
+  field.type = 'text'; 
+  field.id = 'input'; 
 
-      return sortedStr1 === sortedStr2
+  buttonEl.innerHTML = 'Sort the Letters in Name'
+
+  buttonEl.setAttribute('id', 'my-button'); 
+
+  outputEl.appendChild(field); 
+  outputEl.insertBefore(buttonEl, field.nextSibling); 
+  outputEl.insertBefore(Name, buttonEl.nextSibling); 
+
+
+  buttonEl.addEventListener('click', function() {
+  Name.innerHTML ='Sorted username is: '+field.value.split('').sort().join(); 
+
+  })
   }
-
-  var button = document.createElement('button'); 
-  button.textContent = 'Sort/Anagram'; 
-  button.addEventListener('click', function() {
-      var inputField = document.getElementById('input'); 
-      var outputDiv = document.getElementById('output'); 
-      var inputValue = inputField.value;
-
-      //uncomment one of the following lines to use the nameSort or anagram() function. 
-      // var sortedValue = nameSort(inputValue); 
-      // var sortedValue = anagram(inputValue, 'listen'); 
-
-      outputDiv.textContent = sortedValue; 
-  });
-
-  var inputField = document.createElement('input'); 
-  inputField.type = 'text'; 
-  inputField.id = 'input'; 
-
-  var outputDiv = document.createElement('div'); 
-  outputDiv.id = 'output'; 
-
-  document.body.appendChild(inputField); 
-  document.body.appendChild(button); 
-  document.body.appendChild(outputDiv); 
-
-}
-
 
 main();
