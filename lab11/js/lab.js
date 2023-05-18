@@ -16,37 +16,39 @@ function main() {
   console.log("Main function Started."); 
   //the code that makes everything happen 
 
-  $(document).ready(function() { //creates and appends button to challenge sect.
+  $(document).ready(function() { //creates and appends button to the challenge section (first section)
     var ChallengeButton = $('<button>', {
       id: 'challengeButton', 
       text: 'Challenge Button'
       });
       ChallengeButton.click(function(){
-        alert('Challenge Time!') //action goes right here
+        alert('Challenging Stuff!') //action 
     }); 
   
     $('#challenge').append(ChallengeButton); 
    
-  //creates and appends button for problems sect.
+  //creates and appends button for problems section
     var ProblemsButton = $('<button>', {
       id: 'probButton', 
       text: 'Problems Button'
       });
       ProblemsButton.click(function(){
-        alert('Zoinks, Problems!') //action goes right here
+        alert('Zoinks, Problems!') //action 
     }); 
     $('#problems').append(ProblemsButton); 
   
-  //creates and appends button for reflections sect
-    var ReflectionButton = $('<button>', {
-      id: 'reflectionButton', 
-      text: 'Reflection Button'
+  //creates and appends button for results section 
+    var ResultsButton = $('<button>', {
+      id: 'resultsButton', 
+      text: 'Results Button'
       });
-      ReflectionButton.click(function(){
-        alert('Wee Reflection!') //action goes here
+      ResultsButton.click(function(){
+        alert('Wee Results!') //action
     });
-      $('#reflection').append(ReflectionButton); 
+      $('#results').append(ResultsButton); 
   }); 
+
+
 
 }
 
