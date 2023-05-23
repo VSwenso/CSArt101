@@ -1,6 +1,6 @@
-// index.js - lab 11: Libraries &jQuery 
+// index.js - lab 12: Conditionals 
 // Author: Tory Swenson
-// Date: 5/17/23
+// Date: 5/22/23
 
 // Constants 
 
@@ -15,40 +15,30 @@ function myFunction(param1, param2) {
 function main() {
   console.log("Main function Started."); 
   //the code that makes everything happen 
+  function sortingHat(str) {
+    len = str.length; 
+    mod = len % 4; 
+    if (mod == 0) {
+      return "GRYFFINDOR"
+    }
+    else if (mod == 1) {
+      return "RAVENCLAW"
+    }
+    else if (mod == 2) {
+      return "SLYTHERIN"
+    }
+    else if (mod == 3) {
+      return "HUFFlePUFF"
+    }
+  }
 
-  $(document).ready(function() { //creates and appends button to the challenge section (first section)
-    var ChallengeButton = $('<button>', {
-      id: 'challengeButton', 
-      text: 'Challenge Button'
-      });
-      ChallengeButton.click(function(){
-        alert('Challenging Stuff!') //action 
-    }); 
-  
-    $('#challenge').append(ChallengeButton); 
-   
-  //creates and appends button for problems section
-    var ProblemsButton = $('<button>', {
-      id: 'probButton', 
-      text: 'Problems Button'
-      });
-      ProblemsButton.click(function(){
-        alert('Zoinks, Problems!') //action 
-    }); 
-    $('#problems').append(ProblemsButton); 
-  
-  //creates and appends button for results section 
-    var ResultsButton = $('<button>', {
-      id: 'resultsButton', 
-      text: 'Results Button'
-      });
-      ResultsButton.click(function(){
-        alert('Wee Results!') //action
-    });
-      $('#results').append(ResultsButton); 
-  }); 
-
-
+  var myButton = document.getElementById("button"); 
+  myButton.addEventListener("click", function() {
+      var name = document.getElementById("input").value; 
+      var house = sortingHat(name); 
+      newText = "<p> The Sorting Hat has placed you into " + house + "</p>"; 
+      document.getElementById("output").innerHTML = newText; 
+  })
 
 }
 
