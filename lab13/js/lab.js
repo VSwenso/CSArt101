@@ -15,7 +15,7 @@ function myFunction(param1, param2) {
 function main() {
   console.log("Main Function started."); 
   // the code which makes stuff happen
-  function FIzzBuzz(){
+  function FizzBuzz(){
     var oneLongString= ''; 
     for(var i=0; i<200; i++) {
       var num=i; 
