@@ -29,9 +29,10 @@ function main() {
       if (i %7==0){
         oneLongString+='Boom'; 
     }
-    oneLongString+='<br>'; 
+    oneLongString+='<br>' 
+    }
+    $('#output').append('<p>'+oneLongString+'</p>'); 
   }
-  $('#output').append('<p>'+oneLongString+'</p>'); 
-}}
+}
 
 main();
