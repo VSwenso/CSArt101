@@ -16,22 +16,25 @@ function main() {
   console.log("Main Function started."); 
   // the code which makes stuff happen
   function FizzBuzz(){
-    var oneLongString= ''; 
-    for(var i=0;i<200;i++){
-      var num=i; 
-      oneLongString+=num; 
-      if (i %3==0){
-        oneLongString+='Fizz';
+    var oneLongString = ""; 
+    for(var i = 0; i < 200; i++) {
+      var num = i; 
+      oneLongString += num; 
+      if (i % 3 == 0) {
+        oneLongString += 'Fizz';
       }
-      if (i %5==0){
-        oneLongString+='Buzz';
+      if (i % 5 == 0) {
+        oneLongString += 'Buzz';
       }
-      if (i %7==0){
+      if (i % 7 == 0) {
         oneLongString+='Boom'; 
+      }
+      oneLongString += '<br>'; 
     }
-    oneLongString+='<br>'
+    $('#output').append('<p>'+ oneLongString + '</p>'); 
   }
-  $('#output').append('<p>'+oneLongString+'</p>'); 
-}}
+
+  FizzBuzz();
+}
 
 main();
