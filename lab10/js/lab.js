@@ -33,7 +33,7 @@ function main() {
 
 
   buttonEl.addEventListener('click', function() {
-  Name.innerHTML ='Sorted username is: '+field.value.split('').sort().join(); 
+  Name.innerHTML ='Sorted username is: '+field.value.split('').sort().join(''); 
 
   })
   }
