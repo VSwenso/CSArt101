@@ -1,6 +1,6 @@
-// index.js - lab 13: Loops  
+// index.js - lab 15: Ajax  
 // Author: Tory Swenson
-// Date: 5/24/23
+// Date: 5/31/23
 
 // Constants 
 
@@ -13,19 +13,19 @@ function myFunction(param1, param2) {
 }
 
 function main() {
-  import { axios } from "@pipedream/platform"
-  export default defineComponent({
-    props: {
-      swapi: {
-        type: "app",
-        app: "swapi",
-    }
-  },
-    async run({steps, $}) {
-      return await axios($, {
-        url: `https://swapi.dev/api/films/1/`,
-    })
-  },
-})
+  console.log("Clicked!"); 
+  $.ajax({
+    url: "https://swapi.dev/api/", 
+    type: "GET", 
+    data: {}, 
+  })
+  .done(function(data) {
+    console.log(data); 
+    var answer = data.answer; 
+    var imgURL = data.image; 
+    $("#output").html("<h2>" + answer); 
+    $("#output").append("<img src=" + imgURL + ">"); 
+  })
 }
+$("button").click(getStuff); 
 main();
