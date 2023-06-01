@@ -41,6 +41,11 @@ function main() {
           // Handle the error condition appropriately 
         }
       });
+    getData();
+
+    $('myButton').click(function() {
+      getData(); 
+    });
     });
   });
 }
