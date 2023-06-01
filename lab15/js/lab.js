@@ -41,9 +41,6 @@ function main() {
         }
       });
     });
-
-    $('#myButton').trigger('click');
-      getData();
   });
 }
 
