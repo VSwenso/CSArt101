@@ -18,12 +18,11 @@ function main() {
 
   $(document).ready(function() {
     // Attach the click event handler to a parent element usin event delegation
-    $(document).on('click', '#activate', function (){
+    $(document).on('click', '#activate', function() {
       var randomNumber = Math.floor(Math.random() * 1015) + 1; 
       console.log('Clicked!'); 
       $.ajax({
-
-        url: "https://pokieapi.co/api/v2/pokemon/"+randomNumber, 
+        url: "https://pokieapi.co/api/v2/pokemon/" + randomNumber, 
         type: "GET", 
         dataType: "json", 
         success: function(data) {
@@ -31,9 +30,9 @@ function main() {
           console.log(data); 
           // Process the recieved data or perform other tasks
           var name = data.name; 
-        var spriteURL = data.sprites.front_default; 
-        $('#output').append('<p>Name: ' + name + '</p>'); 
-        $('#output').append('<img src="' + spriteURL + '" alt="Pokemon Sprite">'); 
+          var spriteURL = data.sprites.front_default; 
+          $('#output').append('<p>Name: ' + name + '</p>'); 
+          $('#output').append('<img src="' + spriteURL + '" alt="Pokemon Sprite">'); 
         }, 
         error: function(jqXHR, textStatus, errorThrown) {
           // Actions to perform when the API call Fails
@@ -41,12 +40,14 @@ function main() {
           // Handle the error condition appropriately 
         }
       });
+    });
+
     getData();
 
-    $('myButton').click(function() {
-      getData(); 
-    });
+    $('#myButton').click(function() {
+      getData();
     });
   });
 }
+
 main();
