@@ -42,8 +42,6 @@ function main() {
       });
     });
 
-    getData();
-
     $('#myButton').click(function() {
       getData();
     });
