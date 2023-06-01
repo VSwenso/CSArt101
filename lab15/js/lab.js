@@ -22,7 +22,7 @@ function main() {
       var randomNumber = Math.floor(Math.random() * 1015) + 1; 
       console.log('Clicked!'); 
       $.ajax({
-        url: "https://pokieapi.co/api/v2/pokemon/" + randomNumber, 
+        url: "hhttps://swapi.dev/api/films/1/" + randomNumber, 
         type: "GET", 
         dataType: "json", 
         success: function(data) {
@@ -32,7 +32,7 @@ function main() {
           var name = data.name; 
           var spriteURL = data.sprites.front_default; 
           $('#output').append('<p>Name: ' + name + '</p>'); 
-          $('#output').append('<img src="' + spriteURL + '" alt="Pokemon Sprite">'); 
+          $('#output').append('<img src="' + spriteURL + '" alt="Starwars Sprite">'); 
         }, 
         error: function(jqXHR, textStatus, errorThrown) {
           // Actions when the API call Fails
