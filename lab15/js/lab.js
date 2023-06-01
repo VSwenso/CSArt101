@@ -22,7 +22,7 @@ function main() {
       var randomNumber = Math.floor(Math.random() * 1015) + 1; 
       console.log('Clicked!'); 
       $.ajax({
-        url: "hhttps://swapi.dev/api/films/1/" + randomNumber, 
+        url: "https://pokieapi.co/api/v2/pokemon/" + randomNumber, 
         type: "GET", 
         dataType: "json", 
         success: function(data) {
@@ -32,7 +32,7 @@ function main() {
           var name = data.name; 
           var spriteURL = data.sprites.front_default; 
           $('#output').append('<p>Name: ' + name + '</p>'); 
-          $('#output').append('<img src="' + spriteURL + '" alt="Starwars Sprite">'); 
+          $('#output').append('<img src="' + spriteURL + '" alt="Pokemon Sprite">'); 
         }, 
         error: function(jqXHR, textStatus, errorThrown) {
           // Actions when the API call Fails
@@ -42,9 +42,8 @@ function main() {
       });
     });
 
-    $('#myButton').click(function() {
+    $('#myButton').trigger('click');
       getData();
-    });
   });
 }
 
