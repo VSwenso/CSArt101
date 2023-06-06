@@ -4,11 +4,11 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: dotted 8px #b26002;
-    background-color: #e43e94af;
-    color:rgb(30, 26, 244);
+    border: dotted 8px #2d19de;
+    background-color: #de8602b3;
+    color:rgb(230, 10, 50);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 body {
-  background-color: rgb(149, 59, 194);
+  background-color: rgb(225, 10, 110);
 }
